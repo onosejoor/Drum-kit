@@ -6,7 +6,7 @@ body {
   h1 {
     font-size: 5rem;
     color: #DBEDF3;
-    font-family: "Arvo", cursive;
+    font-family: "Arvo", 'cursive';
     text-shadow: 3px 0 #DA0463;
   
   }
@@ -62,19 +62,11 @@ body {
     margin: 10% auto;
   }
   
-  .game-over {
-    background-color: red;
-    opacity: 0.8;
-  }
-  
   .pressed {
     box-shadow: 0 3px 4px 0 #DBEDF3;
     opacity: 0.5;
   }
-  
-  .red {
-    color: red;
-  }
+
   
   .drum{
     text-align: center;
@@ -88,7 +80,7 @@ body {
     margin: 10px;
     text-shadow:2px 0px #a3aaac;
     font-size: 5rem;
-    font-family: 'Arvo', cursive;
+    font-family: 'Arvo', 'cursive';
     font-weight: 900;
     background-color: white;
     color:#DA0463;
