@@ -8,7 +8,7 @@ for(var i = 0; i<buttonNumber; i++){
     });
 }
 
-document.addEventListener("keydown", function (hi) {
+document.addEventListener("keyup", function (hi) {
     sound(hi.key);
     animation(hi.key);
 });
@@ -53,10 +53,64 @@ switch (key) {
 }
 }
 function animation (currentKey) {
-    var activeKey = document.querySelector("." + currentKey);
-    activeKey.classList.add("pressed");
+    switch (currentKey) {
+        case "w":
+            var activeKey = document.querySelector(".w");
+            activeKey.classList.add("pressed");
+            setTimeout(function () {
+                activeKey.classList.remove("pressed")},
+                100);
+            break;
+    
+            case "a":
+                var activeKey = document.querySelector(".a");
+                activeKey.classList.add("pressed");
+                setTimeout(function () {
+                    activeKey.classList.remove("pressed")},
+                    100);
+                break;
+                
+            case "s":
+                var activeKey = document.querySelector(".s");
+                activeKey.classList.add("pressed");
+                setTimeout(function () {
+                    activeKey.classList.remove("pressed")},
+                    100);
+               break;
 
-    setTimeout(function () {
-        activeKey.classList.remove("pressed")},
-        100);
+               case "d":
+                var activeKey = document.querySelector(".d");
+                activeKey.classList.add("pressed");
+                setTimeout(function () {
+                    activeKey.classList.remove("pressed")},
+                    100);
+                break;
+        
+                case "j":
+                    var activeKey = document.querySelector(".j");
+                    activeKey.classList.add("pressed");
+                    setTimeout(function () {
+                        activeKey.classList.remove("pressed")},
+                        100);
+                    break;
+                    
+                case "k":
+                    var activeKey = document.querySelector(".k");
+                    activeKey.classList.add("pressed");
+                    setTimeout(function () {
+                        activeKey.classList.remove("pressed")},
+                        100);
+                   break;
+
+                   case "l":
+                    var activeKey = document.querySelector(".l");
+                    activeKey.classList.add("pressed");
+                    setTimeout(function () {
+                        activeKey.classList.remove("pressed")},
+                        100);
+                   break;
+                   default:
+                    break;
+}
+
 }
